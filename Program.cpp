@@ -27,13 +27,12 @@ Program::~Program()
             delete k;
         }
 
-        delete s;
-
         s->Cursuri.clear();
+
+        delete s;
     }
 
     Subprograme.clear();
-
 
 }
 

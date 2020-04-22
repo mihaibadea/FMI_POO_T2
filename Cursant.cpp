@@ -90,7 +90,8 @@ std::istream &operator>>(std::istream &in, Cursant &C)
         throw("Optiune invalida");
     }
 
-    in>>*(C.P);
+    in>>(*(C.P));
+
 
 
     return in;
