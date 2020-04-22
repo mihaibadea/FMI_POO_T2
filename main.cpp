@@ -13,6 +13,8 @@
 #include "Curs_Turca.h"
 #include "Curs_Legislatie.h"
 #include "Curs_Programare.h"
+#include "Curs_POO.h"
+#include "Curs_PP.h"
 
 
 using namespace std;
@@ -27,7 +29,7 @@ int main()
 
     Curs_Engleza D(9,5,10);
 
-    Curs_Programare E(4,5,5,10,10);
+    Curs_PP E(4,5,5,10,10);
 
 
     cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie()<<" "<<D.medie()<<" "<<E.medie();
