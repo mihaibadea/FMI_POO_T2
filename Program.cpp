@@ -29,7 +29,14 @@ double Program::medie()
         n++;
     }
 
-    //pt subprograme
+    for(auto s : Subprograme)
+    {
+        for(auto k : s->Cursuri)
+        {
+            m=m+ (*k).medie();
+            n++;
+        }
+    }
 
     m=m/n;
     return m;
