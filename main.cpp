@@ -24,24 +24,18 @@ using namespace std;
 
 int main()
 {
-    Curs_Algebra A(10,10,10,5);
 
-    Curs_HR B(10,10,10,5);
+    Program V;
 
-    Curs_Legislatie C(1,2);
+    Curs *A = new Curs_HR(5,6,7,8);
+    Curs *B = new Curs_Condus(10);
 
-    Curs_Engleza D(9,5,10);
+    V.Cursuri.push_back(A);
+    V.Cursuri.push_back(B);
 
-    Curs_PP E(4,5,5,10,10);
-
-    Curs_Condus F(7);
+    cout<<V.medie()<<" "<<V.competenta();
 
 
-    cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie()<<" "<<D.medie()<<" "<<E.medie()<<" "<<F.medie();
-
-    cout<<"\n";
-
-    cout<<A<<" \n"<<B<<" \n"<<C<<" \n"<<D<<" \n"<<E<<" \n"<<F;
 
 
     return 0;

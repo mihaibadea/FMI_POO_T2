@@ -8,13 +8,13 @@ class Program
 {
     public:
         Program();
-        virtual ~Program();
+        virtual ~Program()=default;
         Program(const Program& other);
         Program& operator=(const Program& other);
         double medie();
         std::string competenta();
 
-    protected:
+   // protected:
         std::vector<Curs*> Cursuri;
         std::vector<Program*> Subprograme;
 

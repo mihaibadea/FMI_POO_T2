@@ -5,10 +5,6 @@ Program::Program()
     //ctor
 }
 
-Program::~Program()
-{
-    //dtor
-}
 
 Program::Program(const Program& other)
 {
@@ -37,5 +33,14 @@ double Program::medie()
 
     m=m/n;
     return m;
+}
 
+std::string Program::competenta()
+{
+    double m = medie();
+
+    if(m<5) return "Picat";
+    if(m<7) return "Mica";
+    if(m<9) return "Medie";
+    return "Mare";
 }
