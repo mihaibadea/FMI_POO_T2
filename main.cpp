@@ -21,6 +21,8 @@
 #include "Program_Finantist.h"
 #include "Program_Manager.h"
 #include "Program_Programator.h"
+#include "Program_Manager_Programatori.h"
+#include "Program_Manager_Tiristi.h"
 
 
 using namespace std;
