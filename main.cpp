@@ -15,6 +15,9 @@
 #include "Curs_Programare.h"
 #include "Curs_POO.h"
 #include "Curs_PP.h"
+#include "Curs_Condus.h"
+
+#include "Program.h"
 
 
 using namespace std;
@@ -31,12 +34,14 @@ int main()
 
     Curs_PP E(4,5,5,10,10);
 
+    Curs_Condus F(7);
 
-    cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie()<<" "<<D.medie()<<" "<<E.medie();
+
+    cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie()<<" "<<D.medie()<<" "<<E.medie()<<" "<<F.medie();
 
     cout<<"\n";
 
-    cout<<A<<" \n"<<B<<" \n"<<C<<" \n"<<D<<" \n"<<E;
+    cout<<A<<" \n"<<B<<" \n"<<C<<" \n"<<D<<" \n"<<E<<" \n"<<F;
 
 
     return 0;
