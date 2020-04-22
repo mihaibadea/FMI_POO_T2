@@ -2,7 +2,7 @@
 
 Curs_Mate::Curs_Mate()
 {
-    Titlu = "Mate";
+    Titlu = "Matematica generica";
     nLuc=3;
     for(int i=0; i<nLuc; i++)
     {
@@ -13,7 +13,7 @@ Curs_Mate::Curs_Mate()
 
 Curs_Mate::Curs_Mate(short int a, short int b, short int c, short int d)
 {
-    Titlu = "Mate";
+    Titlu = "Matematica generica";
 
     nLuc=3;
 

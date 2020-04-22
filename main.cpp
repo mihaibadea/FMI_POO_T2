@@ -8,7 +8,10 @@
 #include "Curs_Algebra.h"
 #include "Curs_Geometrie.h"
 #include "Curs_Analiza.h"
-#include "Curs_NLP.h"
+#include "Curs_Limba.h"
+#include "Curs_Engleza.h"
+#include "Curs_Turca.h"
+
 
 using namespace std;
 
@@ -20,12 +23,14 @@ int main()
 
     Curs_Financiar C(1,2,3);
 
+    Curs_Engleza D(9,5,10);
 
-    cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie();
+
+    cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie()<<" "<<D.medie();
 
     cout<<"\n";
 
-    cout<<A<<" \n"<<B<<" \n"<<C;
+    cout<<A<<" \n"<<B<<" \n"<<C<<" \n"<<D;
 
 
     return 0;
