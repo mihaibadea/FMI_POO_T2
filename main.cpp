@@ -59,7 +59,7 @@ int main()
 
     for(auto a : M)
     {
-        cout<<a.first<< " : "<<a.second;
+        cout<<a.first<< " : "<<a.second<<";\n";
     }
 
 
