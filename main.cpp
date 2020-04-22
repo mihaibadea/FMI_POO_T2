@@ -11,6 +11,8 @@
 #include "Curs_Limba.h"
 #include "Curs_Engleza.h"
 #include "Curs_Turca.h"
+#include "Curs_Legislatie.h"
+#include "Curs_Programare.h"
 
 
 using namespace std;
@@ -21,16 +23,18 @@ int main()
 
     Curs_HR B(10,10,10,5);
 
-    Curs_Financiar C(1,2,3);
+    Curs_Legislatie C(1,2);
 
     Curs_Engleza D(9,5,10);
 
+    Curs_Programare E(4,5,5,10,10);
 
-    cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie()<<" "<<D.medie();
+
+    cout<<A.medie()<<" "<<B.medie()<<" "<<C.medie()<<" "<<D.medie()<<" "<<E.medie();
 
     cout<<"\n";
 
-    cout<<A<<" \n"<<B<<" \n"<<C<<" \n"<<D;
+    cout<<A<<" \n"<<B<<" \n"<<C<<" \n"<<D<<" \n"<<E;
 
 
     return 0;

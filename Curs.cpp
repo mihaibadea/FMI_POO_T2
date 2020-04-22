@@ -1,6 +1,6 @@
 #include "Curs.h"
 
-Curs::Curs() : nLuc(0), Titlu("Abstract")
+Curs::Curs() : nLuc(0), Titlu("Curs generic")
 {
 
 }
