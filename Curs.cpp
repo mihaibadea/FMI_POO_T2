@@ -1,6 +1,6 @@
 #include "Curs.h"
 
-Curs::Curs()
+Curs::Curs() : nLuc(0)
 {
 
 }

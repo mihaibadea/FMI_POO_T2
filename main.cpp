@@ -4,14 +4,15 @@
 #include "Curs.h"
 #include "Curs_HR.h"
 #include "Curs_Financiar.h"
+#include "Curs_Mate.h"
 
 using namespace std;
 
 int main()
 {
-    Curs_HR A(1,2,3,4);
+    Curs_Mate A(10,10,10,5);
 
-    Curs_Financiar B(5,8,9);
+    Curs_HR B(10,10,10,5);
 
     cout<<A.medie()<<" "<<B.medie();
 

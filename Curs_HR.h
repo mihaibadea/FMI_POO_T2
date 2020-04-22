@@ -7,7 +7,7 @@ class Curs_HR : public Curs
 {
     public:
         Curs_HR();
-        Curs_HR(int, int, int, int);
+        Curs_HR(short int, short int, short int, short int);
         ~Curs_HR()=default;
 
     protected:

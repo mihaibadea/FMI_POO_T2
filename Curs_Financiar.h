@@ -7,7 +7,7 @@ class Curs_Financiar : public Curs
 {
     public:
         Curs_Financiar();
-        Curs_Financiar(int, int, int);
+        Curs_Financiar(short int, short int, short int);
         ~Curs_Financiar()=default;
 
     protected:

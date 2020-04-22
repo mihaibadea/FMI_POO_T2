@@ -10,7 +10,7 @@ Curs_HR::Curs_HR()
     }
 }
 
-Curs_HR::Curs_HR(int a, int b, int c, int d)
+Curs_HR::Curs_HR(short int a, short int b, short int c, short int d)
 {
     nLuc=4;
 

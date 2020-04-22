@@ -10,7 +10,7 @@ Curs_Financiar::Curs_Financiar()
     }
 }
 
-Curs_Financiar::Curs_Financiar(int a, int b, int c)
+Curs_Financiar::Curs_Financiar(short int a, short int b, short int c)
 {
     nLuc=3;
 
