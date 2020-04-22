@@ -9,6 +9,7 @@ class Curs_Financiar : public Curs
         Curs_Financiar();
         Curs_Financiar(short int, short int, short int);
         ~Curs_Financiar()=default;
+        double medie();
 
     protected:
 

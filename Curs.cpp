@@ -28,16 +28,7 @@ Curs& Curs::operator=(const Curs& rhs)
     return *this;
 }
 
-double Curs::medie()
-{
-    double m=0;
-    for(int i=0; i<nLuc; i++)
-    {
-        m=m+LP[i];
-    }
-    m=m/nLuc;
-    return m;
-}
+
 
 std::ostream &operator<<(std::ostream &out, Curs &C)
 {

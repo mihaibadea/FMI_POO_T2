@@ -9,6 +9,7 @@ class Curs_HR : public Curs
         Curs_HR();
         Curs_HR(short int, short int, short int, short int);
         ~Curs_HR()=default;
+        double medie();
 
     protected:
 

@@ -37,6 +37,7 @@ Cursant::Cursant(std::string k, short int opt): Nume(k)
         break;
     default:
         throw("Optiune invalida");
+        break;
     }
 }
 
@@ -66,6 +67,7 @@ std::istream &operator>>(std::istream &in, Cursant &C)
 
     C.Nume=k;
 
+
     switch(opt)
     {
     case 1:
@@ -88,6 +90,7 @@ std::istream &operator>>(std::istream &in, Cursant &C)
         break;
     default:
         throw("Optiune invalida");
+        break;
     }
 
     in>>(*(C.P));

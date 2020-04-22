@@ -9,6 +9,7 @@ class Curs_Legislatie : public Curs
         Curs_Legislatie();
         Curs_Legislatie(short int, short int);
         ~Curs_Legislatie()=default;
+        double medie();
 
     protected:
 

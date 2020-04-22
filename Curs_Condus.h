@@ -9,6 +9,7 @@ class Curs_Condus : public Curs
         Curs_Condus();
         Curs_Condus(short int);
         ~Curs_Condus()=default;
+        double medie();
 
     protected:
 

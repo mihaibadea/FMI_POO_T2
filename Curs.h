@@ -10,7 +10,7 @@ class Curs
         virtual ~Curs()=default;
         Curs(const Curs&);
         Curs& operator=(const Curs& );
-        virtual double medie();
+        virtual double medie()=0;
         friend std::ostream &operator<<(std::ostream &out, Curs &C);
         friend std::istream &operator>>(std::istream &in, Curs &C);
 

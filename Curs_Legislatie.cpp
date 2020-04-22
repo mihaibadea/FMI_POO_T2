@@ -21,3 +21,13 @@ Curs_Legislatie::Curs_Legislatie(short int a, short int b)
 
 }
 
+double Curs_Legislatie::medie()
+{
+    double m=0;
+    for(int i=0; i<nLuc; i++)
+    {
+        m=m+LP[i];
+    }
+    m=m/nLuc;
+    return m;
+}

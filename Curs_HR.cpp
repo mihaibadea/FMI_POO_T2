@@ -21,3 +21,14 @@ Curs_HR::Curs_HR(short int a, short int b, short int c, short int d)
     LP[2]=c;
     LP[3]=d;
 }
+
+double Curs_HR::medie()
+{
+    double m=0;
+    for(int i=0; i<nLuc; i++)
+    {
+        m=m+LP[i];
+    }
+    m=m/nLuc;
+    return m;
+}

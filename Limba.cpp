@@ -21,13 +21,3 @@ Curs_Financiar::Curs_Financiar(short int a, short int b, short int c)
     LP[2]=c;
 }
 
-double Curs_Financiar::medie()
-{
-    double m=0;
-    for(int i=0; i<nLuc; i++)
-    {
-        m=m+LP[i];
-    }
-    m=m/nLuc;
-    return m;
-}
