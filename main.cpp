@@ -18,6 +18,7 @@
 #include "Curs_Condus.h"
 
 #include "Program.h"
+#include "Program_Finantist.h"
 
 
 using namespace std;
@@ -25,15 +26,12 @@ using namespace std;
 int main()
 {
 
-    Program V;
+    Program_Finantist V;
 
-    Curs *A = new Curs_HR(5,6,7,8);
-    Curs *B = new Curs_Geometrie(5,5,5,10);
 
-    V.Cursuri.push_back(A);
-    V.Cursuri.push_back(B);
+    cin>>V;
 
-    cout<<V.medie()<<" "<<V.competenta();
+    cout<<V;
 
 
 

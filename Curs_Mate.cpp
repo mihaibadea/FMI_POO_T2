@@ -58,6 +58,7 @@ std::ostream &operator<<(std::ostream &out, Curs_Mate &C)
 
 std::istream &operator>>(std::istream &in, Curs_Mate &C)
 {
+
     for(int i=0; i<C.nLuc; i++)
     {
         in>>C.LP[i];

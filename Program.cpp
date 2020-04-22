@@ -1,14 +1,39 @@
 #include "Program.h"
 
-Program::Program()
+Program::Program() : Titlu("Program generic"), Cursuri({}), Subprograme({})
 {
-    //ctor
+
 }
 
 
 Program::Program(const Program& other)
 {
-    //copy ctor
+
+}
+
+Program::~Program()
+{
+    for(auto k : Cursuri)
+    {
+        delete k;
+    }
+
+    Cursuri.clear();
+
+    for(auto s : Subprograme)
+    {
+        for(auto k: s->Cursuri)
+        {
+            delete k;
+        }
+
+        delete s;
+
+        s->Cursuri.clear();
+    }
+
+    Subprograme.clear();
+
 }
 
 Program& Program::operator=(const Program& rhs)
@@ -17,6 +42,8 @@ Program& Program::operator=(const Program& rhs)
     //assignment operator
     return *this;
 }
+
+
 
 double Program::medie()
 {
@@ -46,8 +73,34 @@ std::string Program::competenta()
 {
     double m = medie();
 
-    if(m<5) return "Picat";
-    if(m<7) return "Mica";
-    if(m<9) return "Medie";
-    return "Mare";
+    if(m<5) return "picat";
+    if(m<7) return "competenta mica";
+    if(m<9) return "competenta medie";
+    return "competenta mare";
+}
+
+std::ostream &operator<<(std::ostream &out, Program &P)
+{
+
+    out<<P.Titlu<<", "<<P.competenta();
+
+
+    return out;
+}
+std::istream &operator>>(std::istream &in, Program &P)
+{
+    for(auto k : P.Cursuri)
+    {
+        in>>(*k);
+    }
+
+    for(auto s : P.Subprograme)
+    {
+        for(auto k : s->Cursuri)
+        {
+            in>>(*k);
+        }
+    }
+
+    return in;
 }

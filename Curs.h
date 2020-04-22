@@ -14,6 +14,8 @@ class Curs
         friend std::ostream &operator<<(std::ostream &out, Curs &C);
         friend std::istream &operator>>(std::istream &in, Curs &C);
 
+        std::string getTitlu(){return Titlu;};
+
     protected:
         short int nLuc;
         short int LP[10];
