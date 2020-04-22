@@ -16,7 +16,7 @@ class Program
         friend std::ostream &operator<<(std::ostream &out, Program &P);
         friend std::istream &operator>>(std::istream &in, Program &P);
 
-   // protected:
+    protected:
         std::vector<Curs*> Cursuri;
         std::vector<Program*> Subprograme;
         std::string Titlu;

@@ -25,21 +25,41 @@
 #include "Program_Manager_Tiristi.h"
 #include "Program_Soferi.h"
 
+#include "Cursant.h"
+
 
 using namespace std;
 
 int main()
 {
 
-    Program_Finantist V;
-    Program_Manager M;
-    Program_Programator P;
+    map<std::string, int> M;
 
+    cout<<"Numarul de cursanti: ";
+    int n;
 
-    cin>>V;
+    cin>>n;
 
-    cout<<V;
+    for(int i=0; i<n; i++)
+    {
+        cout<<"Informatii pentru cursantul nr. "<<i+1<<": ";
+        Cursant C;
+        try{
+            cin>>C;
+            M[C.competenta()]++;
+            cout<<C<<'\n';
+        }
+        catch(const char* t)
+        {
+            cout<<t<<'\n';
+        }
 
+    }
+
+    for(auto a : M)
+    {
+        cout<<a.first<< " : "<<a.second;
+    }
 
 
 

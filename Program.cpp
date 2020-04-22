@@ -92,6 +92,7 @@ std::istream &operator>>(std::istream &in, Program &P)
 {
     for(auto k : P.Cursuri)
     {
+        std::cout<<"("<<(*k).getTitlu()<<") ";
         in>>(*k);
     }
 
