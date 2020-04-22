@@ -2,6 +2,7 @@
 
 Curs_HR::Curs_HR()
 {
+    Titlu = "Resurse umane";
     nLuc=4;
 
     for(int i=0; i<nLuc; i++)
@@ -12,6 +13,7 @@ Curs_HR::Curs_HR()
 
 Curs_HR::Curs_HR(short int a, short int b, short int c, short int d)
 {
+    Titlu = "Resurse umane";
     nLuc=4;
 
     LP[0]=a;

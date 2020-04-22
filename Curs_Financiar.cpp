@@ -2,6 +2,7 @@
 
 Curs_Financiar::Curs_Financiar()
 {
+    Titlu = "Financiar";
     nLuc=3;
 
     for(int i=0; i<nLuc; i++)
@@ -12,6 +13,7 @@ Curs_Financiar::Curs_Financiar()
 
 Curs_Financiar::Curs_Financiar(short int a, short int b, short int c)
 {
+    Titlu = "Financiar";
     nLuc=3;
 
     LP[0]=a;

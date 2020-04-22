@@ -2,6 +2,7 @@
 
 Curs_Mate::Curs_Mate()
 {
+    Titlu = "Mate";
     nLuc=3;
     for(int i=0; i<nLuc; i++)
     {
@@ -12,6 +13,8 @@ Curs_Mate::Curs_Mate()
 
 Curs_Mate::Curs_Mate(short int a, short int b, short int c, short int d)
 {
+    Titlu = "Mate";
+
     nLuc=3;
 
     LP[0]=a;
@@ -34,3 +37,34 @@ double Curs_Mate::medie()
 
     return 0.5*m + 0.5*EvFin;
 }
+
+std::ostream &operator<<(std::ostream &out, Curs_Mate &C)
+{
+    out<<C.Titlu<<" -- ";
+
+    out<<"Note lucrari practice: {";
+
+    for(int i=0; i<C.nLuc-1; i++)
+    {
+        out<<C.LP[i]<<", ";
+    }
+
+    out<<C.LP[C.nLuc-1];
+
+    out<<"} Nota examen final: "<<C.EvFin<<"; ";
+
+    return out;
+}
+
+std::istream &operator>>(std::istream &in, Curs_Mate &C)
+{
+    for(int i=0; i<C.nLuc; i++)
+    {
+        in>>C.LP[i];
+    }
+
+    in>>C.EvFin;
+
+    return in;
+}
+

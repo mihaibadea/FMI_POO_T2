@@ -1,6 +1,6 @@
 #include "Curs.h"
 
-Curs::Curs() : nLuc(0)
+Curs::Curs() : nLuc(0), Titlu("Abstract")
 {
 
 }
@@ -38,3 +38,30 @@ double Curs::medie()
     m=m/nLuc;
     return m;
 }
+
+std::ostream &operator<<(std::ostream &out, Curs &C)
+{
+    out<<C.Titlu<<" -- ";
+    out<<"Note lucrari practice: {";
+
+    for(int i=0; i<C.nLuc-1; i++)
+    {
+        out<<C.LP[i]<<", ";
+    }
+
+    out<<C.LP[C.nLuc-1];
+
+    out<<"}; ";
+    return out;
+}
+
+std::istream &operator>>(std::istream &in, Curs &C)
+{
+    for(int i=0; i<C.nLuc; i++)
+    {
+        in>>C.LP[i];
+    }
+    return in;
+}
+
+

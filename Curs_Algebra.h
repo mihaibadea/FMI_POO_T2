@@ -3,7 +3,7 @@
 
 #include "Curs_Mate.h"
 
-class Curs_Algebra : Curs_Mate
+class Curs_Algebra : public Curs_Mate
 {
     public:
         Curs_Algebra();

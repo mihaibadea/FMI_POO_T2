@@ -10,6 +10,8 @@ class Curs_Mate : public Curs
         Curs_Mate(short int, short int, short int, short int);
         ~Curs_Mate()=default;
         double medie();
+        friend std::ostream &operator<<(std::ostream &out, Curs_Mate &C);
+        friend std::istream &operator>>(std::istream &in, Curs_Mate &C);
 
     protected:
         short int EvFin;
