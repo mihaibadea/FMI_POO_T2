@@ -8,6 +8,7 @@
 #include "Curs_Algebra.h"
 #include "Curs_Geometrie.h"
 #include "Curs_Analiza.h"
+#include "Curs_NLP.h"
 
 using namespace std;
 
