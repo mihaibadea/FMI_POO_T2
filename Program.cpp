@@ -98,8 +98,10 @@ std::istream &operator>>(std::istream &in, Program &P)
 
     for(auto s : P.Subprograme)
     {
+        std::cout<<"(subprogram) ";
         for(auto k : s->Cursuri)
         {
+            std::cout<<"("<<(*k).getTitlu()<<") ";
             in>>(*k);
         }
     }
