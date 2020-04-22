@@ -20,6 +20,7 @@
 #include "Program.h"
 #include "Program_Finantist.h"
 #include "Program_Manager.h"
+#include "Program_Programator.h"
 
 
 using namespace std;
@@ -29,6 +30,7 @@ int main()
 
     Program_Finantist V;
     Program_Manager M;
+    Program_Programator P;
 
 
     cin>>V;
