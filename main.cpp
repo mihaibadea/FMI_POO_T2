@@ -28,7 +28,7 @@ int main()
     Program V;
 
     Curs *A = new Curs_HR(5,6,7,8);
-    Curs *B = new Curs_Condus(10);
+    Curs *B = new Curs_Geometrie(5,5,5,10);
 
     V.Cursuri.push_back(A);
     V.Cursuri.push_back(B);
