@@ -23,6 +23,7 @@
 #include "Program_Programator.h"
 #include "Program_Manager_Programatori.h"
 #include "Program_Manager_Tiristi.h"
+#include "Program_Soferi.h"
 
 
 using namespace std;
