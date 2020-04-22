@@ -38,8 +38,11 @@ Program::~Program()
 
 Program& Program::operator=(const Program& rhs)
 {
-    if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    if (this == &rhs) return *this;
+
+    Cursuri = rhs.Cursuri;
+    Subprograme = rhs.Subprograme;
+
     return *this;
 }
 
