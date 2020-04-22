@@ -19,6 +19,7 @@
 
 #include "Program.h"
 #include "Program_Finantist.h"
+#include "Program_Manager.h"
 
 
 using namespace std;
@@ -27,6 +28,7 @@ int main()
 {
 
     Program_Finantist V;
+    Program_Manager M;
 
 
     cin>>V;

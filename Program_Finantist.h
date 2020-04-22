@@ -8,7 +8,7 @@ class Program_Finantist : public Program
 {
     public:
         Program_Finantist();
-        ~Program_Finantist();
+        ~Program_Finantist()=default;
 
     protected:
 
