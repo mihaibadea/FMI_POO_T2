@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <map>
 
 #include "Curs.h"
 #include "Curs_HR.h"
